@@ -1,7 +1,6 @@
 package org.thecodevillage.intro;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Elkibet on 9/23/2017.
@@ -144,6 +143,21 @@ public class MyCollections {
             System.out.println("Name:" + myCar.getName()+"\tColor: " +myCar.getColor());
         }
 
+
+        LinkedList list=new LinkedList<>();
+        LinkedList<String> someList=new LinkedList<>();
+        LinkedList<Car> someListCar=new LinkedList<>();
+        someList.add("Hilda");
+
+        someList.add(0,"Nicholas");
+        someList.remove(0);
+
+        Map<Integer,String> myHashmap=new HashMap<>();
+        Map<String,String> gender=new HashMap<>();
+        myHashmap.put(12345,"Nicholas Odingo");
+        myHashmap.get(12345);
+
+        gender.put("F","Female");
 
 
 
