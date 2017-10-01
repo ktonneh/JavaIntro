@@ -15,6 +15,17 @@ public class MyFunctions {
     }
 
 
+    public static void printName(String name){
+        System.out.println("Name: "+name);
+    }
 
+    public static String printReturnName(String name){
+        System.out.println("Name: "+name);
+        return name;
+    }
 
+    public static void printReturnName(String name,int age){
+        System.out.println("Name: "+name+"\tAge: "+age);
+
+    }
 }

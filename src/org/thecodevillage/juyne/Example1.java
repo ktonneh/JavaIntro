@@ -1,5 +1,6 @@
 package org.thecodevillage.juyne;
 
+import org.thecodevillage.common.MyFunctions;
 import org.thecodevillage.intro.Car;
 
 import java.util.ArrayList;
@@ -37,14 +38,6 @@ public class Example1 {
             } else {
                 System.out.println("No of Students should be 1 and above");
             }
-
-
-
-
-
-
-
-
         } catch (NumberFormatException e){
             e.printStackTrace();
             System.out.println("Only Integers are required");
@@ -52,6 +45,38 @@ public class Example1 {
             System.out.println("Only Integers Inputs are required");
             ex.printStackTrace();
         }
+
+
+        MyFunctions.printName("Hildah");
+
+      ;
+
+        MyFunctions.printReturnName(MyFunctions.printReturnName("Nicko"),8);
+
+        //#Code1
+        //Car carYangu=new Car("Legacy","Red");
+        Car car2=new Car();
+        car2.setName("Gari");
+        car2.setColor("Yellow");
+        //carYangu.setN
+
+        List<Car> listGari=new ArrayList<>();
+        listGari.add(car2);
+
+        //#Code2
+        List<Car> listGari2=new ArrayList<>();
+        //Car ngari=;
+        listGari2.add(new Car("legacy","Gree"));
+
+        //##Using Constructors
+        listGari2.add(new Car("Toyota",40,"Green",120,200));
+        listGari2.add(new Car("Toyota",40,"Green",120,200));
+        listGari2.add(new Car("Toyota",40,"Green",120,200));
+        listGari2.add(new Car("Toyota",40,"Green",120,200));
+
+
+
+
 
 
     }

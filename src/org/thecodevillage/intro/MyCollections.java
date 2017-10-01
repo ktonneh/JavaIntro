@@ -157,7 +157,10 @@ public class MyCollections {
         myHashmap.put(12345,"Nicholas Odingo");
         myHashmap.get(12345);
 
+
         gender.put("F","Female");
+
+        list.iterator();
 
 
 
