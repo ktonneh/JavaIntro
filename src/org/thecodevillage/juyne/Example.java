@@ -1,11 +1,27 @@
 package org.thecodevillage.juyne;
 
-/**
- * Created by Elkibet on 9/23/2017.
- */
+import org.thecodevillage.intro.Car;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Example {
 
     public static void main(String[] args){
         System.out.println("Hello World!!");
+
+        SimpleDateFormat format=new SimpleDateFormat("dd/MM/yyyy");
+        Date myDate = new Date();
+
+        System.out.println(format.format(myDate));
     }
+
+    public static void insert(Car myCar){
+
+        //insert(myCar.getAmount(),myCar);
+
+    }
+
 }
+
+
