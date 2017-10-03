@@ -51,6 +51,8 @@ public class Example {
             student.setAge(scanner.nextInt());
             studentList.add(student);
 
+
+
             //call your db function
             //myDb.nameOfFunctio(student)
         }
