@@ -8,7 +8,6 @@ import org.thecodevillage.common.Rectangle;
  */
 public class RectangleMain {
 
-
     public static void main(String[] args){
         int length = 0;
         int width = 0;
@@ -17,8 +16,19 @@ public class RectangleMain {
         int perimeter = 0;
 
         length = 20;
-
         width = 50;
+
+
+
+
+//        Scanner scanner=new Scanner(System.in);
+//        System.out.println("Please enter the length##");
+//        length = scanner.nextInt();
+//
+//        System.out.println("Please enter the width##");
+//        width = scanner.nextInt();
+
+
 
         System.out.println("Area is: "+area);
         System.out.println("Perimeter is: "+perimeter);
@@ -32,6 +42,8 @@ public class RectangleMain {
 
         area = MyFunctions.calculateArea(length,width);
 
+
+
         perimeter = MyFunctions.calculatePerimeter(length,width);
 
         System.out.println("Area is: "+area);
@@ -43,14 +55,11 @@ public class RectangleMain {
          * we have created getters and setters
          * we have also created 2 constructors
          */
-        Rectangle object1=new Rectangle(20,30);
-
+        Rectangle object1=new Rectangle(length,width);
         Rectangle object2=new Rectangle();
 
-        object2.setLength(50);
-        object2.setWidth(40);
-
-
+        object2.setLength(length);
+        object2.setWidth(width);
         area = MyFunctions.calculateArea(object2.getLength(),object2.getWidth());
 
         System.out.println("Area is: "+area);
@@ -66,13 +75,5 @@ public class RectangleMain {
 
 
 
-
-
-
-
     }
-
-
-
-
 }

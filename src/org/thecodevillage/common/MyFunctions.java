@@ -7,7 +7,7 @@ import java.util.List;
  * Created by Elkibet on 9/17/2017.
  */
 public class MyFunctions {
-
+    public static final Double PI = 3.142;
 
     public static int divide(int a,int b){
         return a/b;
@@ -30,11 +30,7 @@ public class MyFunctions {
 
     public static void printReturnName(String name,int age){
         System.out.println("Name: "+name+"\tAge: "+age);
-
     }
-
-
-
 
     public static int calculateArea(int length,int width){
 //        int area=0;
@@ -63,4 +59,16 @@ public class MyFunctions {
 //        myList.add(rectangle);
         return myList;
     }
+
+
+    //caculate area of a circle
+    //perimetr of a circle
+
+    //myCycle - radius
+    //area()
+    //permetr()
+    //
+    //MyCircleMain-main
+
+
 }
