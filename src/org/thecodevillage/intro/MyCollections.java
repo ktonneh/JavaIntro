@@ -1,5 +1,8 @@
 package org.thecodevillage.intro;
 
+import org.thecodevillage.common.Rectangle;
+import org.thecodevillage.juyne.Student;
+
 import java.util.*;
 
 /**
@@ -157,14 +160,55 @@ public class MyCollections {
         myHashmap.put(12345,"Nicholas Odingo");
         myHashmap.get(12345);
 
-
         gender.put("F","Female");
-
         list.iterator();
 
 
 
+        Map<Integer,String> kaHashmap=new HashMap<>();
+        kaHashmap.put(1,"Koech");
+        kaHashmap.put(2,"K Billy");
+        kaHashmap.put(3,"Daisy");
+        kaHashmap.put(4,"Yule msee");
+
+        Map<Integer,Rectangle> tuHashmap=new HashMap<>();
+        Rectangle rectangle=new Rectangle();
+        rectangle.setLength(20);
+        rectangle.setWidth(70);
+        tuHashmap.put(1,rectangle);
+
+        kaHashmap.get(3);
+
+        Rectangle kaRectangle = tuHashmap.get(1);
+        kaRectangle.getLength();
+        kaRectangle.getArea();
 
 
+
+        Map<Integer,Student> studentHashMap=new HashMap<>();
+
+       Scanner scanner=new Scanner(System.in);
+        for (int g=0; g< 2; g++){
+            Student student=new Student();
+            System.out.println("Enter the ID");
+            student.setId(scanner.nextInt());
+
+            System.out.println("Enter the Name");
+            student.setName(scanner.next());
+
+            studentHashMap.put(student.getId(),student);
+        }
+
+
+        outputMap(studentHashMap);
+    }
+
+    public static void outputMap(Map mp) {
+        Iterator it = mp.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry pair = (Map.Entry)it.next();
+            System.out.println(pair.getKey() + " = " + pair.getValue().getClass());
+            it.remove();
+        }
     }
 }

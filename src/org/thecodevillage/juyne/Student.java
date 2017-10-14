@@ -5,6 +5,7 @@ package org.thecodevillage.juyne;
  */
 public class Student {
 
+    private int id;
     private String name;
     private int age;
 
@@ -14,6 +15,14 @@ public class Student {
     public Student(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

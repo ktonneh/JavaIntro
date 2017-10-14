@@ -78,24 +78,11 @@ public class ArrayTena {
          * *****
          */
 
-
         for (int x=1; x <= 10; x++){
             for (int j=1; j<= 10; j++){
                 System.out.println(x +" X " +j +"\t= "+x*j);
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 
